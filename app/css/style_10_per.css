@@ -1,0 +1,110 @@
+/*  - 1 - fonts load start
+==================================================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Merienda:400,700|Raleway:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,700,700i");
+body {
+  font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif; }
+
+/*  - 1 - fonts load end
+==================================================================================================== */
+header, footer {
+  margin: 0;
+  padding: 0;
+  color: #4696f3; }
+
+html, body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  color: #2f2f2f;
+  height: 100%; }
+
+body {
+  width: 100%;
+  background-color: #f3f3f2; }
+
+li {
+  float: left;
+  list-style: none;
+  text-decoration: none; }
+
+.text-center {
+  text-align: center; }
+
+.text-blue {
+  color: #2196f3; }
+
+.row {
+  width: 100%;
+  height: 50%;
+  padding: 20px; }
+
+.panel {
+  border: 1px solid #333; }
+
+.left-panel {
+  background-color: #fff;
+  box-shadow: 0px 1px 4px 4px #ebebeb;
+  width: 25%;
+  float: left;
+  padding: 3% 0; }
+
+.profile-panel {
+  padding: 1%; }
+  .profile-panel h1 {
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-family: 'Merienda', cursive; }
+
+.left-aboutus-panel {
+  background: #fff;
+  padding: 10%; }
+  .left-aboutus-panel h1 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; }
+  .left-aboutus-panel p {
+    line-height: 1.7;
+    letter-spacing: .5px; }
+
+.social-media-panel {
+  border-bottom: 1px solid #f0f0f0;
+  background: linear-gradient(#eaeaea, #FFFFFF);
+  /* Standard syntax (must be last) */
+  width: 100%;
+  display: table;
+  padding: 50px 0px;
+  text-align: center; }
+  .social-media-panel li {
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    opacity: 0.2;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: black; }
+    .social-media-panel li a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      color: #ffffff;
+      line-height: 35px;
+      text-align: center; }
+
+.center-panel {
+  width: 65%;
+  float: left;
+  margin-left: 3%; }
+
+.center-panel .nav-menu {
+  background-color: #fff;
+  box-shadow: 0px 1px 4px 4px #ebebeb;
+  margin: 3%;
+  height: 10%; }
+  .center-panel .nav-menu li {
+    padding-left: 2%;
+    padding-right: 2%; }

@@ -1,0 +1,140 @@
+/*  - 1 - fonts load start
+==================================================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700|Raleway:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,700,700i');
+
+body { font-family: 'Roboto', sans-serif; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Raleway', sans-serif; }
+/*  - 1 - fonts load end
+==================================================================================================== */
+
+$primary-color: #FFF;
+$secondry-color: #4696f3;
+
+$primary-bg-color: #f3f3f2;
+
+$height-100-per:  100%;
+$height-50-per:  50%;
+
+$width-100-per:  100%;
+$width-50-per:  50%;
+$width-25-per:  50%;
+
+$border: 1px solid #333;
+$white: #fff;
+$blue: #2196f3;
+$black: #2f2f2f;
+
+header {
+    margin: 0;
+    padding:0;
+    color: $secondry-color;
+}
+footer {
+     @extend header;
+}
+
+html,body {
+    font-size: 16px;
+    padding:0;
+    margin:0;
+    color: $black;
+    height:$height-100-per;
+}
+
+body {
+    width:$width-100-per;
+    background-color: $primary-bg-color;
+}
+li{
+  float: left;
+  list-style: none;
+  text-decoration: none;
+}
+.text-center{
+  text-align: center;
+}
+.text-blue{
+  color: $blue;
+}
+.row {
+    width:$width-100-per;
+    height:$height-50-per;
+    padding: 20px;
+}
+.panel{
+  border: $border;
+}
+.left-panel {
+    background-color: $white;
+    box-shadow: 0px 1px 4px 4px #ebebeb;
+    width:25%;
+    float:left;
+    padding: 3% 0;
+}
+.profile-panel{
+  padding: 1%;
+  h1{
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-family: 'Merienda', cursive;
+  }
+}
+.left-aboutus-panel{
+  background: $white;
+  padding: 10%;
+  h1{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+  }
+  p{
+    line-height: 1.7;
+    letter-spacing: .5px;
+  }
+}
+.social-media-panel{
+    border-bottom: 1px solid #f0f0f0;
+    background: linear-gradient(#eaeaea,#FFFFFF);/* Standard syntax (must be last) */
+    width: 100%;
+    display: table;
+    padding: 50px 0px;
+    text-align: center;
+    li{
+      margin: 5px;
+      width: 35px;
+      height: 35px;
+      opacity: 0.2;
+      border-radius: 100%;
+      display: inline-block;
+      background-color: rgb(0, 0, 0);
+      a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #ffffff;
+        line-height: 35px;
+        text-align: center;
+      }
+    }
+}
+.center-panel {
+    width:65%;
+    float:left;
+    // padding: 20px;
+    margin-left: 3%;
+}
+
+.center-panel {
+  .nav-menu{
+    background-color: $white;
+    box-shadow: 0px 1px 4px 4px #ebebeb;
+    margin: 3%;
+    height: 10%;
+    li{
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  }
+}
