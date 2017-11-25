@@ -1,31 +1,8 @@
-/*  - 1 - fonts load start
-==================================================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Merienda:400,700|Raleway:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,700,700i');
 
-body { font-family: 'Roboto', sans-serif; }
-h1,h2,h3,h4,h5,h6 { font-family: 'Raleway', sans-serif; }
-/*  - 1 - fonts load end
-==================================================================================================== */
+@import "./_font.scss";
+@import "./_variables.scss";
+@import "./_functions.scss";
 
-$primary-color: #FFF;
-$secondry-color: #4696f3;
-
-$primary-bg-color: #f3f3f2;
-
-$height-100-per:  100%;
-$height-50-per:  50%;
-
-$width-100-per:  100%;
-$width-50-per:  50%;
-$width-25-per:  50%;
-
-$border: 1px solid #333;
-$white: #fff;
-$blue: #2196f3;
-$black: #2f2f2f;
-
-$primary-font-family: 'Raleway', sans-serif;
-$secondry-font-family: 'Roboto', sans-serif;
 html,body {
     font-size: 16px;
     padding:0;
@@ -44,13 +21,21 @@ body {
   float: right;
 }
 .page-container{
-  max-width:1400px;
+  // max-width:1400px;
 }
-.left-panel{
-  width:33.33333%
+.left-panel {
+    background-color: $white;
+    box-shadow: 0px 1px 4px 4px #ebebeb;
+    width:25%;
+    float:left;
+    // padding: 3% 0;
+}
+.center-panel{
+  width:75%;
+  float: left;
 }
 .menu-panel{
-  width:69.66666%;
+  width:90%;
   float:left;
   margin-left: 3%;
   background: $white;
@@ -136,13 +121,7 @@ li{
 .panel{
   border: $border;
 }
-.left-panel {
-    background-color: $white;
-    box-shadow: 0px 1px 4px 4px #ebebeb;
-    width:25%;
-    float:left;
-    padding: 3% 0;
-}
+
 .profile-panel{
   padding: 1%;
   h1{
@@ -196,7 +175,7 @@ li{
    height: 100%;
 }
 .slider-panel{
-  width:69.66666%;
+  width:90%;
   float:left;
   margin-left: 3%;
   margin-top: 3%;
@@ -209,10 +188,11 @@ li{
 }
 .slider-container{
   // height:100%;
-  margin: 7%;
+  padding: 7%;
 }
 .aboutme-container{
   @extend .slider-container;
+  display: block;
   // margin: 7%;
   h2{
     font-size: 24;
@@ -290,4 +270,68 @@ li{
   @extend .panel;
   height: 10%;
   position: relative;
+}
+.padding-0{
+  padding: 0;
+}
+.skill-tabs li{
+  float: left;
+  width: auto;
+  height: 53px;
+  line-height: 53px;
+  text-align: center;
+}
+.skill-tabs li a{
+  color: #111111;
+  font-size: 14px;
+  letter-spacing: 0.5;
+  padding: 20px;
+  text-transform: lowercase;
+  text-decoration: none;
+  &:hover{
+    background-color: #ffffff;
+    color: #2196f3;
+    box-shadow: 0px 10px 40px 0px rgba(1, 1, 1, 0.1);
+  }
+}
+.skill-panel{
+  @extend .slider-panel;
+}
+.display-block{
+  display: inline-block;
+  position: relative;
+}
+.aboutme-title{
+  @extend .display-block;
+}
+.skill-container{
+  @extend .display-block;
+  padding-bottom: 5%;
+}
+.professional-container{
+  padding: 5%;
+}
+.professionalskills{
+  @extend .display-block;
+  width: 100%;
+  h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+}
+.skills-left{
+  @extend .display-block;
+  width: 50%;
+}
+.skills-right{
+  @extend .display-block;
+  width: 50%;
+}
+.skill-title{
+  @extend .display-block;
+}
+.skill-process{
+  @extend .display-block;
 }

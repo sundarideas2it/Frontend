@@ -9,6 +9,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /*  - 1 - fonts load end
 ==================================================================================================== */
+/*  - 2 - css variables
+==================================================================================================== */
+/*  - 2 - vairables end
+==================================================================================================== */
+/* - 3 - functions using mixins
+==================================================================================================== */
+/*  - 3 - functions end
+==================================================================================================== */
 html, body {
   font-size: 16px;
   padding: 0;
@@ -18,7 +26,7 @@ html, body {
 
 body {
   width: 100%;
-  background-color: #f3f3f2; }
+  background-color: #fff; }
 
 .float-left {
   float: left; }
@@ -26,14 +34,18 @@ body {
 .float-right {
   float: right; }
 
-.page-container {
-  max-width: 1400px; }
-
 .left-panel {
-  width: 33.33333%; }
+  background-color: #fff;
+  box-shadow: 0px 1px 4px 4px #ebebeb;
+  width: 25%;
+  float: left; }
+
+.center-panel {
+  width: 75%;
+  float: left; }
 
 .menu-panel {
-  width: 69.66666%;
+  width: 90%;
   float: left;
   margin-left: 3%;
   background: #fff;
@@ -108,13 +120,6 @@ li {
 .panel, .personal-detail-content {
   border: 1px solid #333; }
 
-.left-panel {
-  background-color: #fff;
-  box-shadow: 0px 1px 4px 4px #ebebeb;
-  width: 25%;
-  float: left;
-  padding: 3% 0; }
-
 .profile-panel {
   padding: 1%; }
   .profile-panel h1 {
@@ -163,8 +168,8 @@ li {
 .download_button_panel {
   height: 100%; }
 
-.slider-panel, .aboutme-panel {
-  width: 69.66666%;
+.slider-panel, .aboutme-panel, .skill-panel {
+  width: 90%;
   float: left;
   margin-left: 3%;
   margin-top: 3%;
@@ -172,22 +177,22 @@ li {
   box-shadow: 0px 1px 4px 4px #ebebeb; }
 
 .slider-container, .aboutme-container {
-  margin: 7%; }
+  padding: 7%; }
 
-.aboutme-container h2 {
-  font-size: 24;
-  font-weight: 700;
-  letter-spacing: 0.9; }
-
-.aboutme-container i {
-  color: #2196f3; }
-
-.aboutme-container p {
-  color: #2f2f2f;
-  font-size: 16px;
-  line-height: 1.625;
-  letter-spacing: 0.5px;
-  font-family: "Roboto", sans-serif; }
+.aboutme-container {
+  display: block; }
+  .aboutme-container h2 {
+    font-size: 24;
+    font-weight: 700;
+    letter-spacing: 0.9; }
+  .aboutme-container i {
+    color: #2196f3; }
+  .aboutme-container p {
+    color: #2f2f2f;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.5px;
+    font-family: "Roboto", sans-serif; }
 
 .left-slider-content {
   width: 47%; }
@@ -238,3 +243,48 @@ li {
 .personal-detail-content {
   height: 10%;
   position: relative; }
+
+.padding-0 {
+  padding: 0; }
+
+.skill-tabs li {
+  float: left;
+  width: auto;
+  height: 53px;
+  line-height: 53px;
+  text-align: center; }
+
+.skill-tabs li a {
+  color: #111111;
+  font-size: 14px;
+  letter-spacing: 0.5;
+  padding: 20px;
+  text-transform: lowercase;
+  text-decoration: none; }
+  .skill-tabs li a:hover {
+    background-color: #ffffff;
+    color: #2196f3;
+    box-shadow: 0px 10px 40px 0px rgba(1, 1, 1, 0.1); }
+
+.display-block, .aboutme-title, .skill-container, .professionalskills, .skills-left, .skills-right, .skill-title, .skill-process {
+  display: inline-block;
+  position: relative; }
+
+.skill-container {
+  padding-bottom: 5%; }
+
+.professional-container {
+  padding: 5%; }
+
+.professionalskills {
+  width: 100%; }
+  .professionalskills h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700; }
+
+.skills-left {
+  width: 50%; }
+
+.skills-right {
+  width: 50%; }
